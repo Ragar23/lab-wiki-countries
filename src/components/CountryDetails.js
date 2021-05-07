@@ -44,10 +44,11 @@ import React, { Component } from 'react'
     }
 
     componentDidUpdate(){
+        console.log("looping")
         console.log(this.state.countryDetails)
         console.log(this.props.match.params.alpha3Code)
 
-        let alphaCodeURL = this.state.countryDetails
+        let alphaCodeURL = this.state.countryDetails.countryCode
         let alphaCode = this.props.match.params.alpha3Code
 
         if (alphaCodeURL !== alphaCode ){

@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import 'bootstrap/dist/css/bootstrap.css';
+import {Link} from "react-router-dom"
 
 
  class NavBar extends Component {
@@ -7,7 +8,7 @@ import 'bootstrap/dist/css/bootstrap.css';
         return (
             <div className="navbar navbar-light bg-light">
                 <div className="container-fluid">
-                    <nav>WikiCountries</nav>
+                    <nav> <Link to={"/"} >  WikiCountries </Link></nav>
                 </div>
             </div>
         )
